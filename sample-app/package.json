@@ -5,13 +5,15 @@
   "main": "functions/controller.js",
   "scripts": {
     "build": "node functions/controller.js",
+    "deploy": "pm2 start functions/controller.js",
     "test": "standard"
   },
   "author": "Dinahar",
   "license": "ABC",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "pm2": "^4.4.0"
   },
   "bundledDependencies": [
     "express"
