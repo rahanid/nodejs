@@ -1,6 +1,6 @@
-import express from 'express';
+var express =  require('express');
 var app = express();
-import { getCollection } from '../dbUtils/dbUtils.js';
+var {getCollection} = require('../dbUtils/dbUtils.js');
 
 //service to list users
 app.route('/users').get(function (req, res) {

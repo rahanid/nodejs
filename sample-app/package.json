@@ -10,11 +10,14 @@
   "author": "Dinahar",
   "license": "ABC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
   },
-  "bundledDependencies": ["express"],
+  "bundledDependencies": [
+    "express"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/rahanid/nodejs.git"
-}
+  }
 }

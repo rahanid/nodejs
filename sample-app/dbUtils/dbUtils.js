@@ -1,5 +1,5 @@
 
-import { MongoClient as mongo } from 'mongodb';
+var mongo = require('mongodb');
 var dburl = "mongodb://localhost:27017?useUnifiedTopology=true";
 
 
@@ -17,7 +17,7 @@ function getDb(){
   });
 }
 
-export function getCollection(name) {
+exports.getCollection = (name) => {
   return new Promise(function (resolve, reject) {
     getDb().then(database => {
       database.collection(name).find().toArray(function (err, docs) {
