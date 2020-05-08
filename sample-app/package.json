@@ -1,0 +1,20 @@
+{
+  "name": "sample-app",
+  "version": "1.0.0",
+  "description": "sample nodeJS application for learning",
+  "main": "functions/controller.js",
+  "scripts": {
+    "build": "node functions/controller.js",
+    "test": "standard"
+  },
+  "author": "Dinahar",
+  "license": "ABC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "bundledDependencies": ["express"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahanid/nodejs.git"
+}
+}

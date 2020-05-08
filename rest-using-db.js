@@ -34,11 +34,11 @@ function getCollection (database, name) {
     return new Promise(function(resolve, reject) {
        database.collection(name).find().toArray( function(err, docs) {
         if (err) {
-          return reject(err)
+          return reject(err);
         }
-        return resolve(docs)
-      })
-    })
+        return resolve(docs);
+      });
+    });
   }
 
 // server to serve the requests
